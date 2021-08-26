@@ -11,7 +11,7 @@
 
     .sidenav {
       height: 100%;
-      width: 15%;
+      width: 250px;
       position: absolute;
       z-index: 1;
       top: 100px;
@@ -54,39 +54,39 @@
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Price Manage</a>
+        <td> <a href="{{route('loadPage', 'PriceManager')}}">Price Manage</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Reser Manage</a>
+        <td> <a href="{{route('loadPage', 'ReserManager')}}">Reser Manage</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Front Office</a>
+        <td> <a href="{{route('loadPage', 'FrontOffice')}}">Front Office</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Point Of Sale</a>
+        <td> <a href="{{route('loadPage', 'PointOfSale')}}">Point Of Sale</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Night Auditor</a>
+        <td> <a href="{{route('loadPage', 'NightAuditor')}}">Night Auditor</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">House keeping</a>
+        <td> <a href="{{route('loadPage', 'HouseKeeping')}}">House keeping</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Setting</a>
+        <td> <a href="{{route('loadPage', 'Setting')}}">Setting</a>
         <td>
       </tr>
       <tr>
-        <td><a href="#">Security</a>
+        <td><a href="{{route('loadPage', 'Security')}}">Security</a>
         <td>
       </tr>
       <tr>
-        <td> <a href="#">Help</a>
+        <td> <a href="{{route('loadPage', 'Help')}}">Help</a>
         <td>
       </tr>
     </table>

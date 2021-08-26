@@ -40,6 +40,42 @@ class HomeController extends Controller
         {
             return view('home', ['value' => $value]);
         }
+        if($value=="FrontOffice")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="Help")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="HouseKeeping")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="NightAuditor")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="PointOfSale")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="PriceManager")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="ReserManager")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="Security")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="Setting")
+        {
+            return view('home', ['value' => $value]);
+        }
 
     }
 }
