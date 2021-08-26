@@ -8,11 +8,11 @@ After install, open xampp control panel , will press Start button from MySql , a
 https://dev.mysql.com/downloads/workbench/
 
 <h3>Check your PHP version, this version must to be minin 7.</h3>
-Steps for check PHP version.
-Open command prompt
-Locate directory using cd C:/Xampp/php
-Type command php -v
-You will get your php version details
+<p>Steps for check PHP version.</p>
+<p>Open command prompt</p>
+<p>Locate directory using cd C:/Xampp/php</p>
+<p>Type command php -v </p>
+<p>You will get your php version details</p>
 
 <h3>Download/Install Composer</h3> 
 https://getcomposer.org/download/
@@ -38,10 +38,10 @@ Open MySql Workbench and setting.
 "create database hotel_administration"
 
 <h3>Download project from git</h3>
-Open cmd and go to the project, ex C:\Users\Florin\Desktop\Vasile Demo\Hotel_Administration>
-Run this command : "php artisan migrate" for generate tables in database.
-Run this command : "php artisan serve" for start server and app.
-Open the link generate in cmd.
+<p>Open cmd and go to the project, ex C:\Users\Florin\Desktop\Vasile Demo\Hotel_Administration></p>
+<p>Run this command : "php artisan migrate" for generate tables in database.</p>
+<p>Run this command : "php artisan serve" for start server and app.</p>
+<p>Open the link generate in cmd.</p>
 
 
 
