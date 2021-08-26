@@ -38,6 +38,10 @@ Open MySql Workbench and setting.
 "create database hotel_administration"
 
 <h3>Download project from git</h3>
+Open cmd and go to the project, ex C:\Users\Florin\Desktop\Vasile Demo\Hotel_Administration>
+Run this command : "php artisan migrate" for generate tables in database.
+Run this command : "php artisan serve" for start server and app.
+Open the link generate in cmd.
 
 
 
