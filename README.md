@@ -1,26 +1,47 @@
-<h1>Download Xampp for create local database</h1> 
+<h3>Download Xampp for create local database</h3> 
 https://www.apachefriends.org/ro/download.html
 
-<h1>Install xampp.</h1>
+<h3>Install xampp.</h3>
 After install, open xampp control panel , will press Start button from MySql , after finish to install composer and laravel.
 
-<h1>Download and install MySql Workbench for database configuration, view, create query, etc.</h1>
+<h3>Download and install MySql Workbench for database configuration, view, create query, etc.</h3>
 https://dev.mysql.com/downloads/workbench/
 
-<h1>Check your PHP version, this version must to be minin 7.</h1>
+<h3>Check your PHP version, this version must to be minin 7.</h3>
 Steps for check PHP version.
 Open command prompt
 Locate directory using cd C:/Xampp/php
 Type command php -v
 You will get your php version details
 
-<h1>Download/Install Composer</h1> 
+<h3>Download/Install Composer</h3> 
 https://getcomposer.org/download/
 
-<h1>Install Laravel after finished to install composer, link: https://laravel.com/docs/7.x#installation how install laravel using composer.
-"composer global require laravel/installer" will see this command in tutorial.</h1>
+<h3>Install Laravel after finished to install composer</h3> 
+link: https://laravel.com/docs/7.x#installation how install laravel using composer.
+"composer global require laravel/installer" will see this command in tutorial.
 
-<h1>Open Xampp and start Mysql</h1> 
+<h3>Open Xampp and start Mysql</h3> 
+
+<h3>Local DataBase configuration</h3>
+Open MySql Workbench and setting.
+
+<h3>Set name Testing.</h3>
+
+![image](https://user-images.githubusercontent.com/66247913/130996082-b835bfac-1502-4b3b-b46e-35706c319374.png)
+
+<h3>How? Right click and select Edit Connection</h3> 
+
+![image](https://user-images.githubusercontent.com/66247913/130996403-85c8824a-d3cc-4d21-afea-acbf112eb57e.png)
+
+<h3>After connection, create new database using this script</h3>
+"create database hotel_administration"
+
+<h3>Download project from git</h3>
+
+
+
+
 
 
 
