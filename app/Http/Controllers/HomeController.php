@@ -23,6 +23,23 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home' ,['value' => 'none']);
+    }
+
+    public function loadPage($value){
+
+        if($value=="Dashboard")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="RoomsManager")
+        {
+            return view('home', ['value' => $value]);
+        }
+        if($value=="GuestManager")
+        {
+            return view('home', ['value' => $value]);
+        }
+
     }
 }

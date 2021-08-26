@@ -1,23 +1,27 @@
 @extends('layouts.app')
-@extends('layouts.left_meniu')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+@if (Auth::check())
+    @include('layouts.left_meniu')
+    
+    @if($value=='Dashboard')
+    
+        @include('pages.dashboard')
+    
+    @endif
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+    @if($value=='RoomsManager')
+    
+        @include('pages.roomsManager')
+    
+    @endif
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    @if($value=='GuestManager')
+    
+        @include('pages.guestManager')
+    
+    @endif
+@else
+
+@endif
+
 @endsection
