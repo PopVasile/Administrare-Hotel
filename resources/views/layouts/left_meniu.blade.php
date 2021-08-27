@@ -34,6 +34,11 @@
     .sidenav a:hover {
       color: black;
     }
+    .text_style
+    {
+      color:red;
+    }
+
   </style>
 </head>
 
@@ -44,6 +49,8 @@
       <tr>
         <td> <a href="{{route('loadPage', 'Dashboard')}}">Dashboard</a>
         <td>
+          <td class="text_style">False</td>
+          
       </tr>
       <tr>
         <td> <a href="{{route('loadPage', 'RoomsManager')}}">Rooms Manage</a>
