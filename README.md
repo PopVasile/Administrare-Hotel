@@ -43,6 +43,11 @@ Open MySql Workbench and setting.
 <p>Run this command : "php artisan serve" for start server and app.</p>
 <p>Open the link generate in cmd.</p>
 
+<h3>Git all comands</h3>
+<p>git pull</p>
+<p>git add *</p>
+<p>git commit -m "coment"</p>
+<p>git push -u origin master</p> 
 
 
 
