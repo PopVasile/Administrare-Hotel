@@ -14,11 +14,11 @@
       width: 250px;
       position: fixed;
       z-index: 1;
-      top: 100px;
+      top: 80px;
       float: right;
       overflow-x: hidden;
       transition: 0.5s;
-      padding-top: 60px;
+      padding-top: 20px;
       border: 1px solid #f5f5f5;
     }
 
