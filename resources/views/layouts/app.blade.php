@@ -12,15 +12,14 @@
 <style>
     .nav-brand
     {
-        position: relative;
-        right: 200px;
+        position: absolute;
+        margin-left: 60px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
     }
     .image-brand
     {
-        position: relative;
-        right: 210px;
+        position: absolute;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
 
@@ -29,10 +28,16 @@
         height: 50px;
         width: 50px;
     }
+    .top_meniu
+    {
+        position: fixed;
+        width: 100%;
+    }
 </style>
 </head>
 <body>
     <div id="app">
+        <div class="top_meniu">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <div class="image-brand">
@@ -91,6 +96,7 @@
         <main class="py-4">
             @yield('content')
         </main>
+        </div>
     </div>
 </body>
 </html>

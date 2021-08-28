@@ -12,7 +12,7 @@
     .sidenav {
       height: 100%;
       width: 250px;
-      position: absolute;
+      position: fixed;
       z-index: 1;
       top: 100px;
       float: right;

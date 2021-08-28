@@ -11,21 +11,24 @@
             position: absolute;
             z-index: 1;
             top: 100px;
-            left:300px;
+            left: 300px;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
             border: 1px solid #f5f5f5;
         }
-
     </style>
 </head>
 
 <body>
-    <div class="content">
+    <div class="row">
         <h1>Rooms Manage</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+    </div>
 
-        <p>My first paragraph.</p>
     </div>
 
 </body>
