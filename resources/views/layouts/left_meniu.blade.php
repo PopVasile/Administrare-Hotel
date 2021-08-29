@@ -49,7 +49,7 @@
       <tr>
         <td> <a href="{{route('loadPage', 'Dashboard')}}">Dashboard</a>
         <td>
-          <td class="text_style">False</td>
+          <td class="text_style"></td>
           
       </tr>
       <tr>

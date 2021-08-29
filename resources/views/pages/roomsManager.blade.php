@@ -9,75 +9,75 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
-        .selecter_date
-        {  
-            padding-top:30px
-        }
-        .table-rooms
-        {
+        .selecter_date {
             padding-top: 30px;
-            width: 100%;
+           
+        }
+        .table-rooms {
+            padding-top: 30px;
+            position: absolute;
+            width: 80%;
+            height: 1000px; 
+            overflow: auto;
         }
     </style>
 </head>
 
 <body>
-   
+
     <div class="container">
         <div class="row">
             <h1>Rooms Manage</h1>
         </div>
-        <div class="selecter_date">
-            <div class="row">
-                <div class="col-sm-4">
-                    <p> Cheak In: <input type="text" id="check_in" name="check_in"></p>
-                </div>
-                <div class="col-sm-4">
-                    <p> Cheak Out: <input type="text" id="check_out" name="check_out"></p>
-                </div>
-                <div class="col-sm-4">
+        <form>
+            <div class="selecter_date">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p> Cheak In: <input type="text" id="check_in" name="check_in"></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p> Cheak Out: <input type="text" id="check_out" name="check_out"></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
 
                 </div>
             </div>
-        </div>
+        </form>
         <div class="row">
-            <div class="table-rooms">
+            <div id="table_room" class="table-rooms">
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Room</th>
+                            <th scope="col">Room ID</th>
+                            <th scope="col">Guest ID</th>
                             <th scope="col">Type</th>
                             <th scope="col">Price</th>
                             <th scope="col">ON/OFF</th>
-                            <th scope="col">Numbers</th>
+                            <th scope="col">Check IN</th>
+                            <th scope="col">Check Out</th>
+                            <th scope="col">Add Reservation</th>
+
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach(range(1,100) as $item)
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row">{{$item}}</th>
                             <td>Mark</td>
                             <td>Otto</td>
+                            <td>Otto</td>
                             <td>@mdo</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
                             <td>Otto</td>
                             <td>@mdo</td>
+                            <td><button type="button" disabled class="btn btn-primary">Add</button></td>
                         </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -93,4 +93,16 @@
     $(function() {
         $("#check_out").datepicker();
     });
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("table_room").style.top = "0";
+        } else {
+            document.getElementById("table_room").style.top = "-50px";
+        }
+    }
 </script>

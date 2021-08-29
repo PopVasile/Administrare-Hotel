@@ -9,9 +9,10 @@
         .table-rooms {
 
             position: absolute;
-            top: 600px;
-            
+            top: 600px;   
             width: 80%;
+            height: 300px;
+            overflow: auto;
             text-align: center;
 
         }
@@ -68,30 +69,16 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach(range(1,100) as $item)
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row">{{$item}}</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

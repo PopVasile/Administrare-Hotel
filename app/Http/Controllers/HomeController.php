@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home' ,['value' => 'none']);
+        return view('home' ,['value' => 'Dashboard']);
     }
 
     public function loadPage($value){
